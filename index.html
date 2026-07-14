@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veeprime Groups — Creative Writing &amp; Design Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Shared icon sprite (reused by every "change image" button) -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol
+        id="icon-camera"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path
+          d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+        />
+        <circle cx="12" cy="13" r="4" />
+      </symbol>
+      <symbol
+        id="icon-close"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M18 6 6 18M6 6l12 12" />
+      </symbol>
+    </svg>
+
+    <!-- ====== NAV ====== -->
+    <header class="nav-wrap">
+      <nav class="nav container">
+        <div class="nav-links nav-links--left">
+          <a href="#home" class="nav-cta">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#services" class="nav-link">Service</a>
+        </div>
+
+        <a href="#home" class="nav-logo" aria-label="Veeprime Groups home">
+          <span class="editable-img logo-frame">
+            <img src="Logo.png" alt="Veeprime">
+            </span>
+            
+          </span>
+        </a>
+
+        <div class="nav-links nav-links--right">
+          <a href="#skills" class="nav-link">Resume</a>
+          <a href="#services" class="nav-link">Project</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <button
+          class="nav-burger"
+          id="navBurger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+
+      <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+      <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#services" class="mobile-link">Service</a>
+        <a href="#skills" class="mobile-link">Resume</a>
+        <a href="#services" class="mobile-link">Project</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        <a href="#contact" class="btn btn-primary mobile-cta"
+          >Try Us <span class="arrow">↗</span></a
+        >
+      </nav>
+    </header>
+
+    <!-- ====== HERO ====== -->
+    <section id="home" class="hero">
+      <div class="hero-blob" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="pill" data-reveal
+            >Hello! <span class="wave">👋</span></span
+          >
+          <h1 class="hero-title">
+            <span data-reveal>Welcome to</span>
+            <span class="accent" data-reveal>Veeprime</span>
+            <span data-reveal>Groups</span>
+          </h1>
+          <div class="hero-lower">
+            <div class="hero-quote" data-reveal>
+              <span class="quote-mark">“</span>
+              At Veeprime Groups, we don't simply create content or design
+              visuals—we build meaningful experiences that inspire, communicate,
+              and endure. Your vision becomes our mission, and your success
+              becomes our greatest achievement.
+            </div>
+            <div class="hero-buttons" data-reveal>
+              <a href="#services" class="btn btn-primary"
+                >Portfolio <span class="arrow">↗</span></a
+              >
+              <a href="#contact" class="btn btn-ghost">Try Us</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-portrait" data-reveal>
+          <div class="portrait-disc"></div>
+          <span class="editable-img portrait-frame">
+            <span class="img-clip">
+              <img src="Vee2.png" alt="Veetory">
+            </span>
+            
+          </span>
+          <div class="badge-rating">
+            <div class="stars">★★★★★</div>
+            <div class="rating-title">5 Years</div>
+            <div class="rating-sub">Experience</div>
+          </div>
+          <svg
+            class="squiggle squiggle-1"
+            viewBox="0 0 60 40"
+            aria-hidden="true"
+          >
+            <path
+              d="M2 30 C15 5 30 35 45 8"
+              stroke="#EF7C1D"
+              stroke-width="3"
+              fill="none"
+              stroke-linecap="round"
+            />
+          </svg>
+          <svg
+            class="squiggle squiggle-2"
+            viewBox="0 0 60 40"
+            aria-hidden="true"
+          >
+            <path
+              d="M2 10 C15 35 30 5 45 30"
+              stroke="#EF7C1D"
+              stroke-width="3"
+              fill="none"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SERVICES ====== -->
+    <section id="services" class="services">
+      <div class="blob-side blob-left" aria-hidden="true"></div>
+      <div class="blob-side blob-right" aria-hidden="true"></div>
+      <div class="container">
+        <h2 class="section-title light" data-reveal>
+          My <span class="accent">Services</span>
+        </h2>
+
+        <div class="service-track" id="serviceTrack">
+          <article class="service-card" data-reveal>
+            <div class="service-media service-media--design editable-img">
+              <span class="img-clip">
+                <img
+                  data-img="service-design"
+                  src="https://images.unsplash.com/photo-1716471330463-f475b00f0506?fm=jpg&amp;q=80&amp;w=800&amp;auto=format&amp;fit=crop"
+                  alt="Designer's desk with a keyboard, pencils, and color swatches"
+                />
+              </span>
+              <label class="img-edit-btn" title="Change photo">
+                <svg><use href="#icon-camera"></use></svg>
+                
+              </label>
+            </div>
+            <div class="service-foot">
+              <h3>Graphic Design</h3>
+              <a
+                href="#contact"
+                class="round-arrow"
+                aria-label="Learn more about Graphic Design"
+                >↗</a
+              >
+            </div>
+          </article>
+
+          <article class="service-card" data-reveal>
+            <div class="service-media service-media--writing editable-img">
+              <span class="img-clip">
+                <img
+                  data-img="service-writing"
+                  src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?fm=jpg&amp;q=80&amp;w=800&amp;auto=format&amp;fit=crop"
+                  alt="Hand holding a pen, writing in a notebook"
+                />
+              </span>
+              <label class="img-edit-btn" title="Change photo">
+                <svg><use href="#icon-camera"></use></svg>
+                
+              </label>
+            </div>
+            <div class="service-foot">
+              <h3>Professional Writing</h3>
+              <a
+                href="#contact"
+                class="round-arrow"
+                aria-label="Learn more about Professional Writing"
+                >↗</a
+              >
+            </div>
+          </article>
+        </div>
+
+        <div class="track-dots" id="trackDots">
+          <button
+            class="dot active"
+            data-index="0"
+            aria-label="Slide 1"
+          ></button>
+          <button class="dot" data-index="1" aria-label="Slide 2"></button>
+          <button class="dot" data-index="2" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SKILLS ====== -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title" data-reveal>
+          My <span class="accent">Skills</span>
+        </h2>
+
+        <div class="skills-grid">
+          <div class="skills-col" data-reveal>
+            <h3>Professional Writing</h3>
+            <ul>
+              <li>Ghostwriting</li>
+              <li>Book &amp; eBook Writing</li>
+              <li>Academic Writing</li>
+              <li>Business Writing</li>
+              <li>Christian Books</li>
+              <li>Memoirs &amp; Biographies</li>
+              <li>Creative Writing</li>
+              <li>Editing &amp; Proofreading</li>
+            </ul>
+          </div>
+
+          <div class="skills-col" data-reveal>
+            <h3>Creative Design</h3>
+            <ul>
+              <li>Brand Identity Design</li>
+              <li>Logo Design</li>
+              <li>Flyer Design</li>
+              <li>Poster Design</li>
+              <li>Social Media Designs</li>
+              <li>Banner Design</li>
+              <li>Business Card Design</li>
+              <li>Company Profile Design</li>
+              <li>Book Cover Design</li>
+            </ul>
+          </div>
+
+          <div class="skills-track" aria-hidden="true">
+            <span class="node node-orange"></span>
+            <span class="node node-dark"></span>
+            <span class="node node-orange"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== WHY CHOOSE US ====== -->
+    <section id="about" class="why">
+      <div class="container why-grid">
+        <div class="why-portrait" data-reveal>
+          <span class="editable-img why-portrait-frame">
+            <span class="img-clip">
+              <img src="Vee.png" alt="You're welcome">
+            </span>
+            <label class="img-edit-btn" title="Change photo">
+              <svg><use href="#icon-camera"></use></svg>
+              <input
+                type="file"
+                accept="image/*"
+                data-img-input="why-portrait"
+              />
+            </label>
+          </span>
+        </div>
+
+        <div class="why-copy" data-reveal>
+          <h2 class="section-title left">
+            Why <span class="accent">Choose Us</span>?
+          </h2>
+          <p>
+            Veeprime Groups is a multidisciplinary creative agency specializing
+            in professional writing and graphic design. We exist to help people
+            present their ideas, stories, and brands with clarity, creativity,
+            and excellence. Supported by a team of experienced writers and
+            designers, we deliver solutions that are thoughtful, impactful, and
+            refined—because quality isn't just our standard; it's our language!
+          </p>
+
+          <div class="why-stats">
+            <div>
+              <span class="stat-num" data-count="450">0</span
+              ><span class="accent">+</span>
+              <div class="stat-label">Project Completed</div>
+            </div>
+            <div>
+              <span class="stat-num" data-count="450">0</span
+              ><span class="accent">+</span>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary">Hire me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== VISION / MISSION / VALUES ====== -->
+    <section class="vmv">
+      <div class="container">
+        <div class="vmv-row" data-reveal>
+          <h2 class="section-title left">
+            Our <span class="accent">Vision</span>
+          </h2>
+          <p>
+            To become the trusted home for exceptional writing and creative
+            design, where every idea is given the quality it deserves.
+          </p>
+        </div>
+
+        <div class="vmv-row vmv-right" data-reveal>
+          <h2 class="section-title right">
+            Our <span class="accent">Mission</span>
+          </h2>
+          <p>
+            We empower individuals, businesses, ministries, and organizations to
+            communicate with confidence through world-class writing and creative
+            design. Every project is executed with originality, meticulous
+            attention to detail, and an unwavering commitment to excellence,
+            ensuring our clients' stories, brands, and visions leave a lasting
+            impact.
+          </p>
+        </div>
+
+        <div class="vmv-row" data-reveal>
+          <h2 class="section-title left">
+            Our Core <span class="accent">Values</span>
+          </h2>
+          <ul class="values-list">
+            <li>
+              <strong>Excellence</strong> — Delivering outstanding quality in
+              every project.
+            </li>
+            <li>
+              <strong>Creativity</strong> — Transforming ideas into memorable
+              experiences.
+            </li>
+            <li>
+              <strong>Integrity</strong> — Building trust through honesty and
+              professionalism.
+            </li>
+            <li>
+              <strong>Innovation</strong> — Embracing fresh ideas and modern
+              creative solutions.
+            </li>
+            <li>
+              <strong>Client-Centered Service</strong> — Prioritizing our
+              clients' goals and satisfaction.
+            </li>
+            <li>
+              <strong>Originality</strong> — Producing authentic work tailored
+              to every client.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== TESTIMONIALS ====== -->
+    <section class="testimonials">
+      <div class="blob-side blob-left" aria-hidden="true"></div>
+      <div class="container">
+        <h2 class="section-title light center" data-reveal>
+          Testimonials That <span class="squiggle-icon">↴</span><br />Speak to
+          <span class="accent">My Results</span>
+        </h2>
+        <p class="testi-sub" data-reveal>
+          Real feedback from clients who trusted Veeprime Groups with their
+          words, brands, and ideas — and walked away with work they were proud
+          to share.
+        </p>
+
+        <div class="testi-track" id="testiTrack">
+          <div class="testi-card" data-reveal>
+            <div class="testi-quote">“</div>
+            <div class="testi-stars">★★★★★ <span>5.0</span></div>
+            <p>
+              Veeprime turned a rough idea into a brand identity that finally
+              feels like us. Every revision came back sharper than expected.
+            </p>
+            <div class="testi-person">
+              <span class="editable-img avatar-frame">
+                <span class="img-clip">
+                  <img
+                    class="avatar-circle"
+                    data-img="testi-1"
+                    src="https://images.unsplash.com/photo-1611432579402-7037e3e2c1e4?fm=jpg&amp;q=80&amp;w=120&amp;auto=format&amp;fit=crop&amp;crop=faces"
+                    alt="Jayesh Patil"
+                  />
+                </span>
+                <label
+                  class="img-edit-btn img-edit-btn--sm"
+                  title="Change photo"
+                >
+                  <svg><use href="#icon-camera"></use></svg>
+                  <input
+                    type="file"
+                    accept="image/*"
+                    data-img-input="testi-1"
+                  />
+                </label>
+              </span>
+              <div>
+                <div class="testi-name">Jayesh Patil</div>
+                <div class="testi-role">CEO, Lirante</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card" data-reveal>
+            <div class="testi-quote">“</div>
+            <div class="testi-stars">★★★★★ <span>5.0</span></div>
+            <p>
+              The writing team understood our voice immediately. What used to
+              take us weeks now ships in days, with zero drop in quality.
+            </p>
+            <div class="testi-person">
+              <span class="editable-img avatar-frame">
+                <span class="img-clip">
+                  <img
+                    class="avatar-circle"
+                    data-img="testi-2"
+                    src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?fm=jpg&amp;q=80&amp;w=120&amp;auto=format&amp;fit=crop&amp;crop=faces"
+                    alt="Amara Nwosu"
+                  />
+                </span>
+                <label
+                  class="img-edit-btn img-edit-btn--sm"
+                  title="Change photo"
+                >
+                  <svg><use href="#icon-camera"></use></svg>
+                  <input
+                    type="file"
+                    accept="image/*"
+                    data-img-input="testi-2"
+                  />
+                </label>
+              </span>
+              <div>
+                <div class="testi-name">Amara Nwosu</div>
+                <div class="testi-role">Founder, Northwind Press</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card" data-reveal>
+            <div class="testi-quote">“</div>
+            <div class="testi-stars">★★★★★ <span>5.0</span></div>
+            <p>
+              From flyers to a full company profile, everything felt considered.
+              Communication was clear from brief to final delivery.
+            </p>
+            <div class="testi-person">
+              <span class="editable-img avatar-frame">
+                <span class="img-clip">
+                  <img
+                    class="avatar-circle"
+                    data-img="testi-3"
+                    src="https://images.unsplash.com/photo-1614786269829-d24616faf56d?fm=jpg&amp;q=80&amp;w=120&amp;auto=format&amp;fit=crop&amp;crop=faces"
+                    alt="Ravi Kumar"
+                  />
+                </span>
+                <label
+                  class="img-edit-btn img-edit-btn--sm"
+                  title="Change photo"
+                >
+                  <svg><use href="#icon-camera"></use></svg>
+                  <input
+                    type="file"
+                    accept="image/*"
+                    data-img-input="testi-3"
+                  />
+                </label>
+              </span>
+              <div>
+                <div class="testi-name">Ravi Kumar</div>
+                <div class="testi-role">Marketing Lead, Solace</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CTA ====== -->
+    <section id="contact" class="cta">
+      <div class="container cta-inner" data-reveal>
+        <h2 class="section-title center">
+          Have an Awesome Project<br />Idea?
+          <span class="accent">Let's Discuss</span>
+        </h2>
+
+        <form class="cta-form" id="ctaForm">
+          <span class="mail-icon">✉</span>
+          <input
+            type="email"
+            placeholder="Enter Email Address"
+            required
+            aria-label="Email address"
+          />
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+        <p class="form-msg" id="formMsg" role="status"></p>
+
+        <div class="cta-facts">
+          <span>★ 4.9/5 Average Ratings</span>
+          <span>◈ 25+ Winning Awards</span>
+          <span>✓ Certified Designer and Writer</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== MARQUEE ====== -->
+    <div class="marquee">
+      <div class="marquee-track">
+        <span
+          >Flyer Design ✦ Logo Design ✦ Research Writing ✦ Creative Writing ✦
+        </span>
+        <span
+          >Flyer Design ✦ Logo Design ✦ Research Writing ✦ Creative Writing ✦
+        </span>
+      </div>
+    </div>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+      <div class="container footer-top" data-reveal>
+        <h2>Lets Connect there</h2>
+        <a href="#contact" class="btn btn-primary"
+          >Hire me <span class="arrow">↗</span></a
+        >
+      </div>
+
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <span class="editable-img logo-frame">
+            <span class="img-clip">
+              <img src="Logo.png" alt="Logo">
+            </span>
+           
+          </span>
+          <p>
+            Veeprime Groups crafts brands and stories with clarity, creativity,
+            and excellence — from first draft to final design.
+          </p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Dribbble">d</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Twitter">x</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#services">Service</a>
+          <a href="#skills">Resume</a>
+          <a href="#services">Project</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="tel:+917738443636">+2348067841706</a>
+          <a href="mailto:hello@veeprimegroups.com">veeafonne@7gmail.com</a>
+          <a href="#">Portfolio</a>
+        </div>
+
+        <div class="footer-col footer-news">
+          <h4>Get the latest information</h4>
+          <form class="footer-form">
+            <input
+              type="email"
+              placeholder="Email Address"
+              aria-label="Email Address"
+            />
+            <button type="submit" aria-label="Subscribe">➤</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <span>Copyright © 2026 Veeprime. All Rights Reserved.</span>
+        <span class="footer-legal"
+          ><a href="#">User Terms &amp; Conditions</a> |
+          <a href="#">Privacy Policy</a></span
+        >
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/motion@10.18.0/dist/motion.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
